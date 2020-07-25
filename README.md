@@ -68,10 +68,9 @@ The different options are:
 	- 3 --> start after pulp-builder
 	- 4	--> test (hello)
 	- 5	--> virtual platform
-- -t: Decide if install test suite or not
+- -t: Decide if install test suite or not<br/>
 
-<br/>
-Useful links:
+Useful links:<br/>
 - https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
 - https://github.com/pulp-platform/pulp-sdk.git
 - https://github.com/pulp-platform/pulp-builder.git
