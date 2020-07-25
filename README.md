@@ -37,6 +37,40 @@ Are the man files for pulp_app.1 and pulp_install.sh. You can use them after exe
 ### pulp_script/pulp_install.sh:
 This is the script where all the necessary repositories for toolchain, sdk, pulp-builder and pulpissimo are cloned.<br/>
 It checks at the beginning the current OS and if different from Ubuntu or CentOS it exits because for the moment everything  has been verified only for these two OS.<br/>
+
+The different options are:
+
+- -v: verbose option, script print many others informations
+- -c: This option define what cross compiler the script install:
+	- pulp		--> newlib cross-compiler for all pulp variants
+					 This will use the multilib support to build the libraries for 
+					 the various cores (riscy, zeroriscy and so on). The right libraries 
+					 will be selected depending on which compiler options you use.
+	- newlib  	--> Newlib cross-compiler, You should now be able
+					 to use riscv-gcc and its cousins.
+	- linux 	--> Linux cross compiler 64 bit
+					 Supported architectures are rv64i plus standard extensions (a)tomics, 
+					 (m)ultiplication and division, (f)loat, (d)ouble, or (g)eneral for MAFD.
+					 Supported ABIs are ilp32 (32-bit soft-float), ilp32d (32-bit hard-float), ilp32f 
+					 (32-bit with single-precision in registers and double in memory, niche use only), 
+					 lp64 lp64f lp64d (same but with 64-bit long and pointers).
+	- linux32	--> Linux cross compiler 32 bit
+					 Supported architectures are rv32i plus standard extensions (a)tomics, 
+					 (m)ultiplication and division, (f)loat, (d)ouble, or (g)eneral for MAFD.
+					 Supported ABIs are ilp32 (32-bit soft-float), ilp32d (32-bit hard-float), ilp32f 
+					 (32-bit with single-precision in registers and double in memory, niche use only), 
+					 lp64 lp64f lp64d (same but with 64-bit long and pointers).
+	- linuxm	--> Linux cross-compiler, both 32 and 64 supported
+- -p: selection of usb for screen connection
+	- 0 --> start from scratch
+	- 1	--> start after the toolchain
+	- 2	--> start after the sdk
+	- 3 --> start after pulp-builder
+	- 4	--> test (hello)
+	- 5	--> virtual platform
+- -t: Decide if install test suite or not
+
+<br/>
 Useful links:
 - https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
 - https://github.com/pulp-platform/pulp-sdk.git
@@ -48,7 +82,7 @@ For more informations look comments inside the script.
 	
 ### pulp_script/pulp_app.sh:
 This is the script to launch if you want to run an application on the FPGA. In particular there are different options:
-- -o: selection of target board**
+- -o: selection of target board
 - -b: create bitstream using PULPissimo_bitstream.sh
 - -d: download bitstream into board using	"make -C pulpissimo-[board] download
 - -c: create cross compiled test elf file of hello
