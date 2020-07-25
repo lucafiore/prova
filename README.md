@@ -42,25 +42,25 @@ The different options are:
 
 - -v: verbose option, script print many others informations
 - -c: This option define what cross compiler the script install:
-	- pulp		--> newlib cross-compiler for all pulp variants
+	- pulp    --> newlib cross-compiler for all pulp variants
 					 This will use the multilib support to build the libraries for 
 					 the various cores (riscy, zeroriscy and so on). The right libraries 
 					 will be selected depending on which compiler options you use.
-	- newlib  	--> Newlib cross-compiler, You should now be able
+	- newlib  --> Newlib cross-compiler, You should now be able
 					 to use riscv-gcc and its cousins.
-	- linux 	--> Linux cross compiler 64 bit
+	- linux   --> Linux cross compiler 64 bit
 					 Supported architectures are rv64i plus standard extensions (a)tomics, 
 					 (m)ultiplication and division, (f)loat, (d)ouble, or (g)eneral for MAFD.
 					 Supported ABIs are ilp32 (32-bit soft-float), ilp32d (32-bit hard-float), ilp32f 
 					 (32-bit with single-precision in registers and double in memory, niche use only), 
 					 lp64 lp64f lp64d (same but with 64-bit long and pointers).
-	- linux32	--> Linux cross compiler 32 bit
+	- linux32 --> Linux cross compiler 32 bit
 					 Supported architectures are rv32i plus standard extensions (a)tomics, 
 					 (m)ultiplication and division, (f)loat, (d)ouble, or (g)eneral for MAFD.
 					 Supported ABIs are ilp32 (32-bit soft-float), ilp32d (32-bit hard-float), ilp32f 
 					 (32-bit with single-precision in registers and double in memory, niche use only), 
 					 lp64 lp64f lp64d (same but with 64-bit long and pointers).
-	- linuxm	--> Linux cross-compiler, both 32 and 64 supported
+	- linuxm  --> Linux cross-compiler, both 32 and 64 supported
 - -p: selection of usb for screen connection
 	- 0 --> start from scratch
 	- 1	--> start after the toolchain
@@ -70,7 +70,7 @@ The different options are:
 	- 5	--> virtual platform
 - -t: Decide if install test suite or not<br/>
 
-Useful links:<br/>
+Useful links:
 - https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
 - https://github.com/pulp-platform/pulp-sdk.git
 - https://github.com/pulp-platform/pulp-builder.git
