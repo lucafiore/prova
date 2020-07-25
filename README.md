@@ -91,10 +91,9 @@ This is the script to launch if you want to run an application on the FPGA. In p
 	- -u all  	--> open many shell with screen on all usb
 	- -u i 		--> show current usb and their name
 - -t: opens 3 terminals for communication and debugging with FPGA through UART, gdb and OpenOCD
-	- -t directory_of_application
-	directory_of_application will be placed in this path
-	./pulp-rt-examples/directory_of_application/
-	in order to fin d application directory, while in this path
+	- -t directory_of_application<br/>
+	directory_of_application will be placed in this path ./pulp-rt-examples/directory_of_application/<br/>
+	in order to find application directory, while in this path
 	./pulp-rt-examples/directory_of_application/build/pulpissimo/test/test
 	to find executable.
 	
