@@ -3,7 +3,7 @@
 Here you can find series of bash script to automatize PULPissimo installation and debug mainly on zcu102 board.
 
 ## Files description
-
+```bash
 AutomatizePULPissimo
 	│
 	├─install.sh			
@@ -21,7 +21,7 @@ AutomatizePULPissimo
 	└─[lib]
 		│
 		└─ccommon.sh
-
+```
 
 
 ### install.sh: 
