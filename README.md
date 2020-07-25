@@ -36,11 +36,11 @@ Are the man files for pulp_app.1 and pulp_install.sh. You can use them after exe
 This is the script where all the necessary repositories for toolchain, sdk, pulp-builder and pulpissimo are cloned.
 It checks at the beginning the current OS and if different from Ubuntu or CentOS it exits because for the moment everything  has been verified only for these two OS.
 Useful links:
-	- https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
-	- https://github.com/pulp-platform/pulp-sdk.git
-	- https://github.com/pulp-platform/pulp-builder.git
-	- https://github.com/pulp-platform/pulpissimo.git
-	- https://github.com/pulp-platform/pulp-rt-examples.git
+- https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
+- https://github.com/pulp-platform/pulp-sdk.git
+- https://github.com/pulp-platform/pulp-builder.git
+- https://github.com/pulp-platform/pulpissimo.git
+- https://github.com/pulp-platform/pulp-rt-examples.git
 	
 For more informations look comments inside the script.
 	
