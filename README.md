@@ -24,7 +24,9 @@ AutomatizePULPissimo
 
 
 ### install.sh: 
-This script simply puts pulp_app.sh and pulp_install.sh into the right directories into the filesystem to be always accessible. It copies pulp_script/pulp_app.sh and pulp_script/pulp_install.sh in /usr/bin/ and manpages/pulp_app.1 and manpages/pulp_install.1 into /usr/share/man/man1/. Then it also copies lib/ccommon.sh script into custom folder /usr/lib/bash-lib where there are all the user defined bash functions.
+This script simply puts pulp_app.sh and pulp_install.sh into the right directories into the filesystem to be always accessible.<br/>
+It copies pulp_script/pulp_app.sh and pulp_script/pulp_install.sh in /usr/bin/ and manpages/pulp_app.1 and manpages/pulp_install.1 into /usr/share/man/man1/.<br/>
+Then it also copies lib/ccommon.sh script into custom folder /usr/lib/bash-lib where there are all the user defined bash functions.
 
 ### pulp_env_example.env: 
 It is an example of what you can find in your personal pulp_env_example.env file once you launch the PULPissimo installation. It contains the environment variables required by the various scripts to perform a correct PULPissimo installation.
@@ -33,8 +35,8 @@ It is an example of what you can find in your personal pulp_env_example.env file
 Are the man files for pulp_app.1 and pulp_install.sh. You can use them after executing ./install.sh
 
 ### pulp_script/pulp_install.sh:
-This is the script where all the necessary repositories for toolchain, sdk, pulp-builder and pulpissimo are cloned.
-It checks at the beginning the current OS and if different from Ubuntu or CentOS it exits because for the moment everything  has been verified only for these two OS.
+This is the script where all the necessary repositories for toolchain, sdk, pulp-builder and pulpissimo are cloned.<br/>
+It checks at the beginning the current OS and if different from Ubuntu or CentOS it exits because for the moment everything  has been verified only for these two OS.<br/>
 Useful links:
 - https://github.com/pulp-platform/pulp-riscv-gnu-toolchain
 - https://github.com/pulp-platform/pulp-sdk.git
